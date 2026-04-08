@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="CasaOrganizada.API/CasaOrganizada.API.csproj" />
+  <Project Path="CasaOrganizada.BLL/CasaOrganizada.BLL.csproj" Id="ac854f1d-947a-49b0-9cef-0112a7220cd6" />
+  <Project Path="CasaOrganizada.Domínio/CasaOrganizada.Domínio.csproj" />
+  <Project Path="CasaOrganizada.Repositório/CasaOrganizada.Repositório.csproj" />
+</Solution>
