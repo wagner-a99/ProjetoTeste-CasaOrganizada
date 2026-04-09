@@ -8,8 +8,7 @@ import {
   Tr,
   Th,
   Tbody,
-  Td,
-  useBreakpointValue,
+  Td
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import TransaçãoModal from "./TransaçãoModal";
@@ -29,20 +28,11 @@ function Transações() {
 
   return (
     <div className="Transações">
-      <h1>Transações!</h1>
+      <h2>TRANSAÇÕES</h2>
 
-      <Flex
-        h="100vh"
-        align="center"
-        justify="center"
-        fontSize="20px"
-        fontFamily="poppins"
-      >
+      <Flex h="100vh" align="center" justify="center" fontSize="20px" fontFamily="poppins">
         <Box w="100%" h="100vh" py={10} px={2}>
-          <Button colorScheme="blue" onClick={() => [onOpen()]}>
-            Adicionar
-          </Button>
-
+          <Button colorScheme="blue" onClick={() => [onOpen()]}>ADICIONAR</Button>
           <Box overflowY="auto" height="100%">
             <Table mt="6">
               <Thead>

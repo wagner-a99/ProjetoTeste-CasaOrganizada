@@ -11,7 +11,7 @@ import {
     FormLabel,
     Textarea,
     Box,
-    Select,
+    Select
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { Categoria, CategoriaService } from "../../../services/categoria/categoriaService";

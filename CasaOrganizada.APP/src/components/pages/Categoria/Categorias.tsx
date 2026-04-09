@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import CategoriaModal from "./CategoriaModal";
-import { Categoria, CategoriaService, Finalidade } from "../../../services/categoria/CategoriaService";
+import { Categoria, CategoriaService, Finalidade } from "../../../services/categoria/categoriaService";
 
 function Categorias() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -25,19 +25,11 @@ function Categorias() {
 
   return (
     <div className="Categorias">
-      <h1>Categorias!</h1>
+      <h1>CATEGORIAS</h1>
 
-      <Flex
-        h="100vh"
-        align="center"
-        justify="center"
-        fontSize="20px"
-        fontFamily="poppins"
-      >
+      <Flex h="100vh" align="center" justify="center" fontSize="20px" fontFamily="poppins">
         <Box w="100%" h="100vh" py={10} px={2}>
-          <Button colorScheme="blue" onClick={() => [onOpen()]}>
-            Adicionar
-          </Button>
+          <Button colorScheme="blue" onClick={() => [onOpen()]}>ADICIONAR</Button>
 
           <Box overflowY="auto" height="100%">
             <Table mt="6">

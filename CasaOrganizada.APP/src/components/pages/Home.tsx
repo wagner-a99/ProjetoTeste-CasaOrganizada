@@ -5,31 +5,13 @@ function Home() {
   return (
     <div className="Home">
       <div className="d-grid gap-2">
-        <Link to="/pessoas">
-          <Button variant="primary" size="lg">
-            Pessoas
-          </Button>
-        </Link>
-        <Link to="/categorias">
-          <Button variant="secondary" size="lg">
-            Categorias
-          </Button>
-        </Link>
-        <Link to="/transacoes">
-          <Button variant="success" size="lg">
-            Transações
-          </Button>
-        </Link>
-        <Link to="/consulta-totais-pessoa">
-          <Button variant="warning" size="lg">
-            Consulta Totais Pessoa
-          </Button>
-        </Link>
-        <Link to="/consulta-totais-categoria">
-          <Button variant="info" size="lg">
-            Consulta Totais Categoria
-          </Button>
-        </Link>
+        <div className="text-center" style={{ display: "flex", justifyContent: "center", gap: "25px" }}>
+          <Button as={Link as any} to="/pessoas" variant="primary" size="lg">PESSOAS</Button>
+          <Button as={Link as any} to="/categorias" variant="primary" size="lg">CATEGORIAS</Button>
+          <Button as={Link as any} to="/transacoes" variant="primary" size="lg">TRANSAÇÕES</Button>
+        </div>
+        <Button as={Link as any} to="/consulta-totais-pessoa" variant="info" size="lg">CONSULTAR TOTAIS POR PESSOA</Button>
+        <Button as={Link as any} to="/consulta-totais-categoria" variant="info" size="lg">CONSULTAR TOTAIS POR CATEGORIA</Button>
       </div>
     </div>
   );

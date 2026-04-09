@@ -36,20 +36,11 @@ function Pessoas() {
 
   return (
     <div className="Pessoas">
-      <h1>Pessoas!</h1>
+      <h1>PESSOAS</h1>
 
-      <Flex
-        h="100vh"
-        align="center"
-        justify="center"
-        fontSize="20px"
-        fontFamily="poppins"
-      >
+      <Flex h="100vh" align="center" justify="center" fontSize="20px" fontFamily="poppins">
         <Box w="100%" h="100vh" py={10} px={2}>
-          <Button colorScheme="blue" onClick={() => [setDataEdit({}), onOpen()]}>
-            Adicionar
-          </Button>
-
+          <Button colorScheme="blue" onClick={() => [setDataEdit({}), onOpen()]}>ADICIONAR</Button>
           <Box overflowY="auto" height="100%">
             <Table mt="6">
               <Thead>
