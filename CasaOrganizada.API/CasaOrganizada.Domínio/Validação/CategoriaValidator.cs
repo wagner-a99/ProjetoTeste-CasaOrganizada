@@ -9,7 +9,7 @@ namespace CasaOrganizada.Domínio.Validação
         {
             RuleFor(c => c.Descrição)
             .NotNull().WithMessage("A descrição da categoria não pode ser nula.")
-            .Length(1, 10).WithMessage("A descrição do item deve ter entre {MinLength} e {MaxLength} caracteres.");
+            .Length(1, 400).WithMessage("A descrição do item deve ter entre {MinLength} e {MaxLength} caracteres.");
 
             RuleFor(c => c.Finalidade).IsInEnum()
                 .WithMessage("Campo Finalidade com valor fora do intervalo definido.");

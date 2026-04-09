@@ -1,4 +1,4 @@
-﻿using CasaOrganizada.BLL;
+﻿using CasaOrganizada.BLL.Config;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +7,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.InjetarDependências();
+
+//START - Bando de Dados
+new ConfigDataBase();
 
 builder.Services.AddCors(options =>
 {

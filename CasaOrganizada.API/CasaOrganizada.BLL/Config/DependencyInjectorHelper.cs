@@ -5,7 +5,7 @@ using CasaOrganizada.Repositório.Repositórios;
 using CasaOrganizada.Repositório.Repositórios.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CasaOrganizada.BLL
+namespace CasaOrganizada.BLL.Config
 {
     public static class DependencyInjectorHelper
     {
